@@ -134,12 +134,12 @@
         <div class="hero-content reveal">
 
           <p class="hero-eyebrow">
-            Seu negócio merece
+            Seu momento merece
           </p>
 
           <h1 class="hero-title">
-            Qualidade, Estilo
-            e Praticidade!
+            Sabor, Carinho
+            e Elegância!
           </h1>
 
           <p class="hero-text">
@@ -285,12 +285,7 @@
 
       <div class="about-image-wrap reveal">
 
-        <img class="about-image"
-          src="https://images.unsplash.com/photo-1621303837174-89787a7d4729?q=80&w=1200&auto=format&fit=crop"
-          alt="Utensílios gourmet">
-
-        <img class="about-leaf"
-          src="https://images.unsplash.com/photo-1518977676601-b53f82aba655?q=80&w=500&auto=format&fit=crop" alt="">
+        <img class="about-image" src="./imgs/poster.png" alt="Utensílios gourmet">
 
       </div>
 
@@ -315,6 +310,12 @@
         <a href="#catalogo" class="about-btn">
           Conheça Mais
         </a>
+
+      </div>
+
+      <div class="about-image-wrap reveal">
+
+        <img class="about-folha" src="./imgs/folha.png" alt="Utensílios gourmet">
 
       </div>
 
@@ -626,14 +627,9 @@
           <p class="contact-card-text">Tire suas dúvidas, faça pedidos ou solicite um orçamento de forma rápida e direta
           </p>
 
-          <a class="contact-whatsapp-btn"
-            href="https://api.whatsapp.com/send/?phone=5511974341632&text&type=phone_number&app_absent=0"
-            target="_blank">
-            <svg fill="none" viewBox="0 0 24 24" stroke-width="1.8">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M8.625 9.75a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.97-4.03 9-9 9h-1.5c-.1 0-.2 0-.3-.01a9 9 0 01-8.14-9.99A9 9 0 0121 12z" />
-            </svg>
-            Falar pelo WhatsApp
+          <a href="https://api.whatsapp.com/send/?phone=5511974341632&text&type=phone_number&app_absent=0"
+            target="_blank" class="nav-btn">
+            Peça pelo WhatsApp
           </a>
         </div>
 
@@ -710,27 +706,8 @@
           <ul>
 
             <li><a href="#atacado">Atacado</a></li>
-            <li><a href="#">Revenda</a></li>
-            <li><a href="#">Política de Entrega</a></li>
-            <li><a href="#">Formas de Pagamento</a></li>
 
           </ul>
-
-        </div>
-
-        <div class="footer-newsletter">
-
-          <h4>Receba Novidades</h4>
-
-          <p>Inscreva-se para ofertas especiais e novos produtos</p>
-
-          <form class="newsletter-form">
-
-            <input type="email" placeholder="Seu melhor e-mail">
-
-            <button type="submit">Inscrever</button>
-
-          </form>
 
         </div>
 
@@ -740,10 +717,11 @@
 
         <p>&copy; 2024 Meu Momento Gourmet. Todos os direitos reservados.</p>
 
+        <a href="https://r2bpropaganda.com.br" target="_blank">Site Desenvolvido por <strong>R2B Company</strong></a>
+
         <div class="footer-payments">
 
-          <span>Visa</span>
-          <span>Mastercard</span>
+          <span>Cartão</span>
           <span>Pix</span>
           <span>Boleto</span>
 
@@ -777,24 +755,24 @@
     navMenu.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', (e) => {
         const href = link.getAttribute('href');
-        
+
         // Se for link interno (começa com #)
         if (href && href.startsWith('#')) {
           e.preventDefault();
           const targetId = href.substring(1);
           const targetElement = document.getElementById(targetId);
-          
+
           if (targetElement) {
             // Fecha o menu mobile
             hamburger.classList.remove('open');
             navMenu.classList.remove('open');
-            
+
             // Scroll suave até o elemento
             targetElement.scrollIntoView({
               behavior: 'smooth',
               block: 'start'
             });
-            
+
             // Atualiza a classe active nos links
             navMenu.querySelectorAll('.nav-link').forEach(navLink => {
               navLink.classList.remove('active');
@@ -819,20 +797,20 @@
 
     // Atualizar active link baseado no scroll
     const sections = document.querySelectorAll('section[id]');
-    
+
     window.addEventListener('scroll', () => {
       let current = '';
       const scrollPosition = window.scrollY + 100;
-      
+
       sections.forEach(section => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.offsetHeight;
-        
+
         if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
           current = section.getAttribute('id');
         }
       });
-      
+
       navMenu.querySelectorAll('.nav-link').forEach(link => {
         link.classList.remove('active');
         const href = link.getAttribute('href');
