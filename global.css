@@ -1371,6 +1371,11 @@ nav.scrolled {
 ========================================= */
 
 @media(max-width: 767px) {
+
+  .hero {
+    min-height: 90vh;
+  }
+
   .hero-inner {
     padding: 20px 0 90px 0;
   }
@@ -1378,7 +1383,7 @@ nav.scrolled {
   .hero-title {
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.35);
     margin-top: -10px;
-    margin-bottom: 45vh;
+    margin-bottom: 20vh;
   }
 
   .hero-text {
