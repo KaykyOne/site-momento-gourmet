@@ -133,7 +133,7 @@ nav.scrolled {
 }
 
 .logo {
-  height: 85px;
+  height: 130px;
   margin-left: 40px;
   margin-right: 40px;
   display: block;
@@ -145,7 +145,7 @@ nav.scrolled {
 }
 
 .nav-inner {
-  height: 68px;
+  height: 150px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -208,7 +208,7 @@ nav.scrolled {
 .nav-menu {
   display: none;
   position: absolute;
-  top: 68px;
+  top: 150px;
   left: 0;
   right: 0;
   background: rgba(248, 243, 237, .98);
@@ -1092,7 +1092,7 @@ nav.scrolled {
 
   .logo {
     display: block;
-    height: 55px;
+    height: 130px;
     margin: 0 40px;
   }
 
@@ -1269,7 +1269,7 @@ nav.scrolled {
   }
 
   .nav-inner {
-    height: 92px;
+    height: 150px;
     gap: 58px;
   }
 
