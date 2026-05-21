@@ -17,6 +17,13 @@
   --radius-full: 9999px;
 }
 
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -133,7 +140,7 @@ nav.scrolled {
 }
 
 .logo {
-  height: 130px;
+  height: 100px;
   margin-left: 40px;
   margin-right: 40px;
   display: block;
@@ -145,7 +152,7 @@ nav.scrolled {
 }
 
 .nav-inner {
-  height: 150px;
+  height: 110px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -208,7 +215,7 @@ nav.scrolled {
 .nav-menu {
   display: none;
   position: absolute;
-  top: 150px;
+  top: 100px;
   left: 0;
   right: 0;
   background: rgba(248, 243, 237, .98);
