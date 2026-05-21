@@ -339,14 +339,14 @@ nav.scrolled {
   font-weight: 700;
   letter-spacing: .22em;
   text-transform: uppercase;
-  color: black;
+  color: var(--olive-dark);
 }
 
 .hero-eyebrow::after {
   content: "";
   width: 44px;
   height: 1px;
-  background: black;
+  background: var(--olive-dark);
 }
 
 .hero-title {
@@ -1249,13 +1249,13 @@ nav.scrolled {
     line-height: .95;
     letter-spacing: -.03em;
     margin-bottom: 22px;
-    color: var(--olive-dark);
+    color: black;
   }
 
   .hero-text {
     font-size: 15px;
     line-height: 1.9;
-    color: var(--olive);
+    color: var(--text);
     backdrop-filter: blur(0);
     background-color: transparent;
     padding: 0;
