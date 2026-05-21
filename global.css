@@ -1373,7 +1373,7 @@ nav.scrolled {
 @media(max-width: 767px) {
 
   .hero {
-    min-height: 90vh;
+    min-height: 70vh;
   }
 
   .hero-inner {
