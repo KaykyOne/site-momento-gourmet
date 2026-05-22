@@ -17,13 +17,6 @@
   --radius-full: 9999px;
 }
 
-.footer-brand {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -56,10 +49,6 @@ a {
   margin: auto;
 }
 
-/* =========================================
-   REVEAL ANIMATION
-========================================= */
-
 .reveal {
   opacity: 0;
   transform: translateY(24px);
@@ -70,10 +59,6 @@ a {
   opacity: 1;
   transform: none;
 }
-
-/* =========================================
-   TOP BAR
-========================================= */
 
 .top-bar {
   background: #7a8058;
@@ -121,10 +106,6 @@ a {
   opacity: .25;
 }
 
-/* =========================================
-   NAVBAR
-========================================= */
-
 nav {
   position: sticky;
   top: 0;
@@ -143,11 +124,6 @@ nav.scrolled {
   height: 100px;
   margin-left: 40px;
   margin-right: 40px;
-  display: block;
-}
-
-/* escondida no mobile */
-.logo {
   display: none;
 }
 
@@ -159,7 +135,6 @@ nav.scrolled {
   position: relative;
 }
 
-/* Logo no mobile (centro) */
 .nav-logo {
   font-family: 'Playfair Display', serif;
   font-size: 18px;
@@ -173,7 +148,6 @@ nav.scrolled {
   color: var(--gold-dark);
 }
 
-/* Hamburger */
 .nav-hamburger {
   display: flex;
   flex-direction: column;
@@ -211,7 +185,6 @@ nav.scrolled {
   transform: translateY(-7px) rotate(-45deg);
 }
 
-/* Menu mobile */
 .nav-menu {
   display: none;
   position: absolute;
@@ -276,10 +249,6 @@ nav.scrolled {
 .nav-btn:hover {
   background: var(--gold-dark);
 }
-
-/* =========================================
-   HERO - MODIFICADO: no celular, texto grande mais próximo do top e texto de baixo mais abaixo
-========================================= */
 
 .hero {
   position: relative;
@@ -356,7 +325,6 @@ nav.scrolled {
   letter-spacing: -.03em;
   margin-bottom: 22px;
   color: white;
-
 }
 
 .hero-text {
@@ -389,10 +357,6 @@ nav.scrolled {
   background: var(--olive-dark);
 }
 
-/* =========================================
-   FEATURES
-========================================= */
-
 .features {
   position: relative;
   background: #f7f1ea;
@@ -413,19 +377,6 @@ nav.scrolled {
   align-items: center;
   gap: 14px;
   padding: 16px 18px;
-}
-
-.feature:nth-child(1),
-.feature:nth-child(2) {
-  border-bottom: 1px solid var(--border);
-}
-
-.feature:nth-child(odd) {
-  border-right: 1px solid var(--border);
-}
-
-.feature::after {
-  display: none;
 }
 
 .feature-icon {
@@ -458,10 +409,6 @@ nav.scrolled {
   color: #7d7268;
   line-height: 1.4;
 }
-
-/* =========================================
-   ABOUT
-========================================= */
 
 .about {
   position: relative;
@@ -546,10 +493,6 @@ nav.scrolled {
   background: #697047;
   transform: translateY(-2px);
 }
-
-/* =========================================
-   MENU / CARDÁPIO
-========================================= */
 
 .menu {
   padding: 70px 0;
@@ -666,10 +609,6 @@ nav.scrolled {
   transform: translateY(-2px);
 }
 
-/* =========================================
-   HISTÓRIA
-========================================= */
-
 .history {
   padding: 70px 0;
   background: #f6efe7;
@@ -766,10 +705,6 @@ nav.scrolled {
   color: var(--olive);
 }
 
-/* =========================================
-   CONTATO
-========================================= */
-
 .contact {
   padding: 70px 0;
   background: white;
@@ -837,7 +772,6 @@ nav.scrolled {
   color: var(--olive);
 }
 
-/* Contact Card */
 .contact-form-wrap {
   background: linear-gradient(135deg, #faf6f0 0%, #f5ede3 100%);
   padding: 40px 32px;
@@ -884,44 +818,6 @@ nav.scrolled {
   color: #7d7268;
   margin-bottom: 28px;
 }
-
-.contact-whatsapp-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  background: #25D366;
-  color: white;
-  padding: 14px 32px;
-  border-radius: var(--radius-full);
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  transition: var(--transition);
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  max-width: 280px;
-  margin: 0 auto 24px auto;
-  box-shadow: 0 8px 20px rgba(37, 211, 102, 0.25);
-}
-
-.contact-whatsapp-btn svg {
-  width: 20px;
-  height: 20px;
-  stroke: white;
-}
-
-.contact-whatsapp-btn:hover {
-  transform: translateY(-3px);
-  background: #20b859;
-  box-shadow: 0 12px 28px rgba(37, 211, 102, 0.35);
-}
-
-/* =========================================
-   FOOTER - ÍCONES OFICIAIS
-========================================= */
 
 .footer {
   background: #1e2a1e;
@@ -1030,10 +926,6 @@ nav.scrolled {
   opacity: .6;
 }
 
-/* =========================================
-   NAV LINK UNDERLINE (Desktop)
-========================================= */
-
 .nav-link::after {
   content: "";
   position: absolute;
@@ -1045,10 +937,6 @@ nav.scrolled {
   background: var(--gold);
   transition: var(--transition);
 }
-
-/* =========================================
-   TABLET — 600px+
-========================================= */
 
 @media(min-width: 600px) {
   .top-bar-inner {
@@ -1079,10 +967,6 @@ nav.scrolled {
     padding: 36px;
   }
 }
-
-/* =========================================
-   TABLET GRANDE — 768px+
-========================================= */
 
 @media(min-width: 768px) {
   .top-bar-inner {
@@ -1190,10 +1074,6 @@ nav.scrolled {
     gap: 60px;
   }
 
-  .about-image-wrap {
-    order: 0;
-  }
-
   .history-grid {
     grid-template-columns: 1fr 1fr;
     gap: 60px;
@@ -1237,10 +1117,6 @@ nav.scrolled {
     text-align: left;
   }
 }
-
-/* =========================================
-   DESKTOP — 1024px+
-========================================= */
 
 @media(min-width: 1024px) {
   .hero-title {
@@ -1372,13 +1248,7 @@ nav.scrolled {
   }
 }
 
-/* =========================================
-   MOBILE SPECIFIC - Hero adjustments
-   texto grande mais próximo do top, texto de baixo mais abaixo
-========================================= */
-
 @media(max-width: 767px) {
-
   .hero {
     min-height: 70vh;
   }
