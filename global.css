@@ -533,9 +533,12 @@ nav.scrolled {
 }
 
 .menu-image-wrap {
+  padding-top: 20px;
   height: 500px;
   overflow: hidden;
 }
+
+
 
 .menu-image {
   width: 100%;
@@ -1249,6 +1252,16 @@ nav.scrolled {
 }
 
 @media(max-width: 767px) {
+  .menu-image-wrap {
+    height: auto;
+  }
+
+  .menu-image {
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+  }
+
   .hero {
     min-height: 70vh;
   }
