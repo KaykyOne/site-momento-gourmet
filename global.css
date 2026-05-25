@@ -520,7 +520,7 @@ nav.scrolled {
 }
 
 .menu-item {
-  background: #F8F8F8;
+  background: #fff;
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: 0 15px 40px rgba(0, 0, 0, .05);
