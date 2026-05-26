@@ -430,7 +430,7 @@ nav.scrolled {
 
 .about-image {
   width: 100%;
-  max-width: 520px;
+  max-width: 6000px;
   border-radius: 6px;
   display: block;
   box-shadow: 0 20px 50px rgba(0, 0, 0, .08);
@@ -544,7 +544,19 @@ nav.scrolled {
   width: 100%;
   height: 100%;
   object-position: top;
+  object-fit: cover;
   transition: transform .5s ease;
+}
+
+.padding-4{
+  padding: 4px;
+}
+
+/* imagens horizontais (espátula) — mostrar inteira sem recorte */
+.menu-image--spatula {
+  object-fit: contain;
+  object-position: center;
+  background: white; /* evita áreas escuras ao redor dependendo da imagem */
 }
 
 .menu-item:hover .menu-image {
