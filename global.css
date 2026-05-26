@@ -1197,7 +1197,7 @@ nav.scrolled {
 
   .about-grid {
     gap: 90px;
-    grid-template-columns: 1.6fr 1fr 0.7fr; /* left image larger, text middle, right image smaller */
+    grid-template-columns: 1.7fr 1.1fr 0.5fr; /* left image larger, text middle, right image smaller */
   }
 
   /* make right-side image slightly smaller to free space for text and left image */
