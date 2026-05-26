@@ -533,8 +533,12 @@ nav.scrolled {
 }
 
 .menu-image-wrap {
-  padding-top: 20px;
-  height: 500px;
+  padding: 22px;
+  height: clamp(280px, 34vw, 420px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
   overflow: hidden;
 }
 
@@ -543,9 +547,9 @@ nav.scrolled {
 .menu-image {
   width: 100%;
   height: 100%;
-  object-position: top;
-  object-fit: cover;
-  transition: transform .5s ease;
+  object-position: center;
+  object-fit: contain;
+  transition: transform .35s ease;
 }
 
 .padding-4{
@@ -556,11 +560,11 @@ nav.scrolled {
 .menu-image--spatula {
   object-fit: contain;
   object-position: center;
-  background: white; /* evita áreas escuras ao redor dependendo da imagem */
+  background: transparent;
 }
 
 .menu-item:hover .menu-image {
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
 .menu-content {
@@ -1085,7 +1089,7 @@ nav.scrolled {
   }
 
   .about-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.25fr 1fr;
     gap: 60px;
   }
 
@@ -1193,7 +1197,19 @@ nav.scrolled {
 
   .about-grid {
     gap: 90px;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1.6fr 1fr 0.7fr; /* left image larger, text middle, right image smaller */
+  }
+
+  /* make right-side image slightly smaller to free space for text and left image */
+  .about-grid .about-image-wrap:last-of-type {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about-grid .about-image-wrap:last-of-type .about-image {
+    max-width: 88%;
+    height: auto;
   }
 
   .feature h4 {
@@ -1265,11 +1281,12 @@ nav.scrolled {
 
 @media(max-width: 767px) {
   .menu-image-wrap {
-    height: auto;
+    height: clamp(240px, 62vw, 320px);
+    padding: 16px;
   }
 
   .menu-image {
-    height: auto;
+    height: 100%;
     object-fit: contain;
     object-position: center;
   }
