@@ -552,7 +552,7 @@ nav.scrolled {
   transition: transform .35s ease;
 }
 
-.padding-4{
+.padding-4 {
   padding: 4px;
 }
 
@@ -1197,7 +1197,8 @@ nav.scrolled {
 
   .about-grid {
     gap: 90px;
-    grid-template-columns: 1.7fr 1.1fr 0.5fr; /* left image larger, text middle, right image smaller */
+    grid-template-columns: 1.7fr 1.1fr 0.5fr;
+    /* left image larger, text middle, right image smaller */
   }
 
   /* make right-side image slightly smaller to free space for text and left image */
@@ -1241,6 +1242,64 @@ nav.scrolled {
 
   .history {
     padding: 100px 0;
+  }
+
+  .history-pillars {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 36px;
+  }
+
+  .history-pillar {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 20px;
+    background: rgba(255, 255, 255, .55);
+    border: 1px solid rgba(175, 136, 55, .14);
+    border-radius: var(--radius-md);
+    backdrop-filter: blur(4px);
+    transition: var(--transition);
+  }
+
+  .history-pillar:hover {
+    background: rgba(255, 255, 255, .85);
+    border-color: rgba(175, 136, 55, .28);
+    transform: translateX(4px);
+  }
+
+  .history-pillar-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-full);
+    background: linear-gradient(180deg, #f7efe5, #ede1d1);
+    border: 1px solid rgba(0, 0, 0, .05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .history-pillar-icon svg {
+    width: 22px;
+    height: 22px;
+    stroke: var(--olive);
+  }
+
+  .history-pillar-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text);
+    line-height: 1.2;
+    margin-bottom: 3px;
+  }
+
+  .history-pillar-desc {
+    font-size: 13px;
+    color: var(--text-soft);
+    line-height: 1.5;
   }
 
   .history-grid {
