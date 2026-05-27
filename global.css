@@ -1396,11 +1396,7 @@ nav.scrolled {
     border-radius: 8px;
     transition: var(--transition);
   }
-
-  .how-title {
-    text-align: start;
-  }
-
+  
   .history-pillar-icon {
     width: 48px;
     height: 48px;
