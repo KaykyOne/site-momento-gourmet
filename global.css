@@ -689,7 +689,7 @@ nav.scrolled {
 
 .history-main-image {
   width: 100%;
-  border-radius: var(--radius-lg);
+  border-radius: 6px;
   box-shadow: 0 30px 50px rgba(0, 0, 0, .1);
 }
 
@@ -1445,7 +1445,7 @@ nav.scrolled {
 
 .how-image {
   width: 100%;
-  border-radius: var(--radius-lg);
+  border-radius: 6px;
   box-shadow: 0 20px 50px rgba(0, 0, 0, .08);
 }
 
