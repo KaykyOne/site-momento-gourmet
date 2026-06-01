@@ -756,6 +756,12 @@ nav.scrolled {
   background: white;
 }
 
+.contact-body{
+  display: flex;
+  flex-direction: column;
+  gap:5px;
+}
+
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr;
